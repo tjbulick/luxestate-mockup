@@ -237,6 +237,70 @@ nav {
     display: flex;
 }
 
+.steps h2 {
+    margin-top: 55px;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.steps-text {
+    line-height: 27px;
+    font-size: 13px;
+}
+
+.mb-text {
+    margin-bottom: 70px;
+}
+
+.step-block {
+    width: 340px;
+    height: 370px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.step-block .step-number {
+    font-size: 200px;
+    position: relative;
+    top: -100px;
+    left: -30px;
+}
+
+.step-block:hover {
+    background: #ffcc01;
+    color: #fff;
+}
+
+.steps-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-block h4 {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.step-block h4 span {
+    margin-right: 15px;
+}
+
+.step-block .step-info {
+    margin-left: 70px;
+    line-height: 29px;
+}
+
+.step-block .step-info-last {
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-bottom: 3px solid #000;
+}
+
 @media screen and (max-width: 768px) {
     .toggle {
         /* clear: both; */
@@ -372,5 +436,28 @@ nav {
 
     .all {
         margin-left: 0;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .step-block {
+        margin-bottom: 30px;
+    }
+
+    .step-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .wrapper h2 {
+        text-align: center;
+    }
+
+    .steps-text {
+        margin-left: 5%;
+        margin-bottom: 15px;
     }
 }
