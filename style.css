@@ -144,6 +144,98 @@ nav {
     font-size: 14px;
 }
 
+.apartments {
+    background: #f6f5f4;
+    padding: 60px 0;
+}
+
+.apart h2 {
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+
+.card {
+    max-width: 348px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+    padding: 25px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-info .price {
+    font-size: 18px;
+    color: #ffcc01;
+}
+
+.card-info i {
+    margin-right: 8px;
+}
+
+.card-info span:not(:last-child) {
+    margin-right: 18px;
+}
+
+.card:hover {
+    background: #fafaf9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 0px;
+}
+
+.buttons-search form {
+    margin-top: 50px;
+}
+
+.apart input[type=text] {
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: 27px;
+    outline: none;
+    padding-left: 62px;
+    font-size: 15px;
+    color: #919eb1;
+    border-radius: 5px 0 0 5px;
+}
+
+.apart input[type=submit] {
+    width: 115px;
+    height: 70px;
+    border: none;
+    background: #ffcc01;
+    font-size: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.all {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.buttons-search {
+    display: flex;
+}
 
 @media screen and (max-width: 768px) {
     .toggle {
@@ -256,5 +348,29 @@ nav {
         margin-top: 5px;
         font-size: 13px;
         line-height: 18px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 30px;
+        justify-items: center;
+    }
+
+    .buttons-search form {
+        margin-top: 20px;
+    }
+    
+    .apart input[type=text] {
+        width: 130px;
+    }
+
+    .buttons-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all {
+        margin-left: 0;
     }
 }
