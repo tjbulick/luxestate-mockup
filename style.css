@@ -301,6 +301,44 @@ nav {
     border-bottom: 3px solid #000;
 }
 
+.services-container {
+    display: flex; 
+    margin-top: 70px;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+}
+
+.services-img-container {
+    width: 58%;
+}
+
+.services-text {
+    width: 42%;
+    margin-left: 3%;
+}
+
+.services-text p {
+    margin-bottom: 60px;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.services-text h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 @media screen and (max-width: 768px) {
     .toggle {
         /* clear: both; */
@@ -459,5 +497,18 @@ nav {
     .steps-text {
         margin-left: 5%;
         margin-bottom: 15px;
+    }
+
+    .services-container {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .services-img-container {
+        width: 100%;
+    }
+
+    .services-text {
+        width: 100%;
     }
 }
